@@ -4,6 +4,34 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from .forms import CustomUserCreationForm  # Import your custom form
 # Signup View
+from django.db.models import Count
+from .models import Client
+from django.contrib.admin.views.decorators import staff_member_required
+
+@staff_member_required
+def admin_statistics(request):
+    """
+    Génère des statistiques pour la page d'accueil de l'admin.
+    """
+    total_clients = Client.objects.count()
+
+    # Récupération des statistiques d'industrie
+    industries_stats = (
+        Client.objects.values('industry')
+        .annotate(count=Count('id'))
+        .order_by('-count')
+    )
+
+    print(f"Total clients: {total_clients}")
+    print(f"Industries stats: {industries_stats}")
+
+    context = {
+        'total_clients': total_clients,
+        'industries_stats': industries_stats,
+    }
+    return render(request, 'admin/statistics_snippet.html', context)
+
+    
 def signup_view(request):
     if request.method == 'POST':
         form = CustomUserCreationForm(request.POST)
@@ -15,6 +43,7 @@ def signup_view(request):
         form = CustomUserCreationForm()
     return render(request, 'crm_app/signup.html', {'form': form})
 # Login View
+
 def login_view(request):
     if request.method == 'POST':
         form = AuthenticationForm(data=request.POST)

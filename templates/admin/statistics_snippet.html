@@ -1,0 +1,26 @@
+<div class="panel">
+    <h2>Client Statistics</h2>
+    <p>Total Clients: {{ total_clients }}</p>
+
+    <h3>Industries Representation</h3>
+    {% if industries_stats %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Industry</th>
+                    <th>Number of Clients</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for industry in industries_stats %}
+                <tr>
+                    <td>{{ industry.industry }}</td>
+                    <td>{{ industry.count }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No data available for industries.</p>
+    {% endif %}
+</div>

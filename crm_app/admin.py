@@ -4,8 +4,9 @@ from .models import Client, Contact, Opportunity, Interaction
 # Enregistrement avec personnalisation
 @admin.register(Client)
 class ClientAdmin(admin.ModelAdmin):
-    list_display = ('name', 'industry', 'email')
+    list_display = ('name', 'industry', 'email','address','phone')
     search_fields = ('name', 'industry')
+    list_filter = ('industry',)
 
 
 @admin.register(Contact)
