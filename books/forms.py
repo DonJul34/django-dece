@@ -28,7 +28,6 @@ class BookForm(forms.ModelForm):
         return book
 
 
-
 class AuthorForm(forms.ModelForm):
     class Meta:
         model = Author

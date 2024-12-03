@@ -36,9 +36,19 @@ def book_create(request):
         if form.is_valid():
             book = form.save(commit=False)
             book.user = request.user
-            book.client = request.user.client  # Assuming each user is associated with one client
-            book.save()  # The publisher will also be saved via the form's `save` method
-            return redirect('books:list')  # Redirect to book list after successful creation
+
+            # Retrieve the client associated with the logged-in user
+            try:
+                client = request.user.client  # Assuming OneToOne relation between User and Client
+                book.client = client
+            except Client.DoesNotExist:
+                # Handle the case where the user does not have an associated client
+                return render(request, 'books/error.html', {
+                    'error_message': "No client associated with this user."
+                })
+
+            book.save()  # Save the book, along with the new publisher
+            return redirect('books:list')  # Redirect to the book list after successful creation
     else:
         form = BookForm()
 

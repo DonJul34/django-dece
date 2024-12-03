@@ -46,7 +46,6 @@ class Book(models.Model):
     genres = models.ManyToManyField('Genre', related_name="books")  # Many-to-Many
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="books")
     client = models.ForeignKey(Client, on_delete=models.CASCADE, related_name="books")
-
     # Custom manager
     objects = BookManager()
 
