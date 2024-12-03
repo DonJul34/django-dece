@@ -1,0 +1,37 @@
+<!-- templates/books/book_list.html -->
+<!DOCTYPE html>
+<html>
+    {% load custom_filters %}
+<head>
+    <title>Advanced Library</title>
+</head>
+<body>
+    <h1>Library</h1>
+
+    <form method="get" action="">
+        <input type="text" name="title" placeholder="Search by title" value="{{ request.GET.title }}">
+        <input type="text" name="author" placeholder="Search by author" value="{{ request.GET.author }}">
+        <input type="text" name="year" placeholder="Published after year" value="{{ request.GET.year }}">
+        <input type="text" name="genre" placeholder="Search by genre" value="{{ request.GET.genre }}">
+        <button type="submit">Search</button>
+    </form>
+
+    <h2>Sort by:</h2>
+    <ul>
+        <li><a href="?{{ request.GET.urlencode }}&sort_by=title">Title</a></li>
+        <li><a href="?{{ request.GET.urlencode }}&sort_by=author__name">Author</a></li>
+        <li><a href="?{{ request.GET.urlencode }}&sort_by=publication_year">Year</a></li>
+    </ul>
+
+    <ul>
+        {% for book in books %}
+            <li>
+                <strong>{{ book.title|uppercase }}</strong> by {{ book.author.name }} ({{ book.publication_year }})<br>
+                Genres: {{ book.genres.all|join:", " }}
+            </li>
+        {% empty %}
+            <li>No books found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
