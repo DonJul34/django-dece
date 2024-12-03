@@ -7,6 +7,25 @@ from .forms import CustomUserCreationForm  # Import your custom form
 from django.db.models import Count
 from .models import Client
 from django.contrib.admin.views.decorators import staff_member_required
+from rest_framework import viewsets
+from .models import Client, Contact, Opportunity, Interaction
+from .serializers import ClientSerializer, ContactSerializer, OpportunitySerializer, InteractionSerializer
+
+class ClientViewSet(viewsets.ModelViewSet):
+    queryset = Client.objects.all()
+    serializer_class = ClientSerializer
+
+class ContactViewSet(viewsets.ModelViewSet):
+    queryset = Contact.objects.all()
+    serializer_class = ContactSerializer
+
+class OpportunityViewSet(viewsets.ModelViewSet):
+    queryset = Opportunity.objects.all()
+    serializer_class = OpportunitySerializer
+
+class InteractionViewSet(viewsets.ModelViewSet):
+    queryset = Interaction.objects.all()
+    serializer_class = InteractionSerializer
 
 @staff_member_required
 def admin_statistics(request):
@@ -31,7 +50,7 @@ def admin_statistics(request):
     }
     return render(request, 'admin/statistics_snippet.html', context)
 
-    
+
 def signup_view(request):
     if request.method == 'POST':
         form = CustomUserCreationForm(request.POST)

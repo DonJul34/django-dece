@@ -36,7 +36,6 @@ def book_create(request):
         if form.is_valid():
             book = form.save(commit=False)
             book.user = request.user
-
             # Retrieve the client associated with the logged-in user
             try:
                 client = request.user.client  # Assuming OneToOne relation between User and Client

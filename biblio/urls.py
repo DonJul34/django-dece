@@ -15,9 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from crm_app import views  # Assurez-vous que la vue est importée
+from rest_framework.routers import DefaultRouter
+from crm_app.views import ClientViewSet, ContactViewSet, OpportunityViewSet, InteractionViewSet
+
+# Créez un routeur et enregistrez vos ViewSets
+router = DefaultRouter()
+router.register(r'clients', ClientViewSet)
+router.register(r'contacts', ContactViewSet)
+router.register(r'opportunities', OpportunityViewSet)
+router.register(r'interactions', InteractionViewSet)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('books/', include('books.urls')),  # Books app
     path('', include('crm_app.urls')),  # CRM app
+    path('api/', include(router.urls)),  # Incluez les routes de l'API
 ]
