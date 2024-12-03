@@ -1,4 +1,3 @@
-<!-- templates/books/book_list.html -->
 <!DOCTYPE html>
 <html>
     {% load custom_filters %}
@@ -28,10 +27,17 @@
             <li>
                 <strong>{{ book.title|uppercase }}</strong> by {{ book.author.name }} ({{ book.publication_year }})<br>
                 Genres: {{ book.genres.all|join:", " }}
+                <a href="{% url 'books:delete' book.pk %}">Delete</a>
             </li>
         {% empty %}
             <li>No books found.</li>
         {% endfor %}
     </ul>
+
+    <div>
+        <a href="{% url 'books:create' %}">Add a New Book</a> |
+        <a href="{% url 'books:add_author' %}">Add a New Author</a> |
+        <a href="{% url 'books:add_genre' %}">Add a New Genre</a>
+    </div>
 </body>
 </html>
