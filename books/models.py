@@ -2,6 +2,7 @@
 from django.db import models
 from crm_app.models import Client  # Assuming the Client model is in crm_app
 from django.conf import settings  # For referencing the User model
+
 class BookManager(models.Manager):
     def filter_books(self, user, title=None, author=None, year=None, genre=None, sort_by=None):
         """
