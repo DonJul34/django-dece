@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
-    {% load custom_filters %}
-<head>
-    <title>Advanced Library</title>
-</head>
+
+{% extends 'base.html' %}  <!-- Correct reference to base.html -->
+{% load i18n %}
+{% load custom_filters %}
+{% block content %}
+
 <body>
     <h1>Library</h1>
 
@@ -40,4 +40,4 @@
         <a href="{% url 'books:add_genre' %}">Add a New Genre</a>
     </div>
 </body>
-</html>
+{% endblock %}
