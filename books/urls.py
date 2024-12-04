@@ -10,6 +10,6 @@ urlpatterns = [
     path('create/', views.book_create, name='create'),
     path('create_author/', views.add_author, name='add_author'),
     path('create_genre/', views.add_genre, name='add_genre'),
-
+    path('set_language/', views.SetLanguageView.as_view(), name='set_language'),
     path('delete/<int:pk>/', views.book_delete, name='delete'),
 ]

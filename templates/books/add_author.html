@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Add Author</title>
-</head>
-<body>
-    <h1>Add a New Author</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Add Author</button>
-    </form>
-    <a href="{% url 'books:list' %}">Back to List</a>
-</body>
-</html>
+{% load i18n %}
+
+{% extends './books/base.html' %}
+{% block content %}
+<h1>{% trans "add_author_trans" %}</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">{% trans "add_author_button_trans" %}</button>
+</form>
+<a href="{% url 'books:list' %}">{% trans "back_to_list_button_trans" %}</a>
+{% endblock %}

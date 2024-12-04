@@ -9,7 +9,20 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
 from django.contrib.auth.models import User
+from django.utils.translation import activate, get_language
+from django.views import View
 
+class SetLanguageView(View):
+    def post(self, request, *args, **kwargs):
+        language = request.POST.get('language')
+        if language not in ['en', 'fr','es']:
+            return JsonResponse({'error': 'Invalid language'}, status=400)
+
+        activate(language)  # Set the active language
+        request.session['django_language'] = language  # Save it to the session
+        request.session.save()  # Ensure the session persists
+        return JsonResponse({'message': 'Language updated successfully', 'language': language})
+        
 class AuthorViewSet(viewsets.ModelViewSet):
     queryset = Author.objects.all()
     serializer_class = AuthorSerializer

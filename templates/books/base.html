@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load i18n %}
+
+<html>
+<head>
+    <title>App Livres</title>
+    <header><nav><ul><li><a href="{% url 'books:list' %}"> Books </a> </li><li><a href="{% url 'videogames:list' %}">Video Game </a> </li></nav>
+        <nav><ul><li><a href="{% url 'books:list' %}"> Books </a> </li><li><a href="{% url 'videogames:list' %}">Video Game </a> </li></nav>
+    </header>
+</head>
+<body>
+    <header>
+    <p>LANGUAGE_CODE: {{ request.LANGUAGE_CODE }}</p>
+
+    <form action="{% url 'set_language' %}" method="post">
+      {% csrf_token %}
+      <select name="language" onchange="this.form.submit()">
+          <option value="fr" {% if request.LANGUAGE_CODE == 'fr' %}selected{% endif %}>🇫🇷 Français</option>
+          <option value="en" {% if request.LANGUAGE_CODE == 'en' %}selected{% endif %}>🇬🇧 English</option>
+          <option value="es" {% if request.LANGUAGE_CODE == 'es' %}selected{% endif %}>Espanol</option>
+      </select>
+  </form>
+</header>
+{% block content %}{% endblock %}
+
+</body><footer></footer>
+</html>

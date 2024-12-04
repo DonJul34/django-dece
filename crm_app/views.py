@@ -20,6 +20,7 @@ from books.serializers import BookSerializer  # Import du serializer Book
 class ClientViewSet(viewsets.ModelViewSet):
     queryset = Client.objects.all()
     serializer_class = ClientSerializer
+
     @action(detail=False, methods=['get'], url_path='books')
     def books(self, request):
         """
@@ -31,7 +32,6 @@ class ClientViewSet(viewsets.ModelViewSet):
                 {"error": "user_id parameter is required."},
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
         try:
             # Fetch the User and the linked Client
             user = User.objects.get(id=user_id)
