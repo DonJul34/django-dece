@@ -14,43 +14,44 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
 from django.contrib.auth.models import User
-
+from books.models import Book  # Import du modèle Book
+from books.serializers import BookSerializer  # Import du serializer Book
 
 class ClientViewSet(viewsets.ModelViewSet):
     queryset = Client.objects.all()
     serializer_class = ClientSerializer
-    
-    @action(detail=False, methods=['get'])
-    def edit_client(self, request):
-          # Retrieve parameters from the URL
+    @action(detail=False, methods=['get'], url_path='books')
+    def books(self, request):
+        """
+        Retrieve a client by user_id and include their associated books in the response.
+        """
         user_id = request.query_params.get('user_id')
-        username = request.query_params.get('username', f"user_{user_id}")  # Fallback username
-        password = request.query_params.get('password', 'defaultpassword')  # Default password for auto-created users
-        name = request.query_params.get('name')
-        address = request.query_params.get('address', '')
-        phone = request.query_params.get('phone', '')
-        email = request.query_params.get('email')
-        industry = request.query_params.get('industry')
-        user = None
-        if user_id:
-            try:
-                user = User.objects.get(id=user_id)
-            except User.DoesNotExist:
-                # Create a new User if user_id does not exist
-                return Response(
-                    {"error": "Vous devez créer un compte pour ce Client d'abord avant de le modifier."},
-                    status=status.HTTP_400_BAD_REQUEST
-                )
-        client = Client.objects.create(
-            user=user
-        )
-        if phone :
-            client.phone = phone
-        if username:
-            client.username = username
-            
-        serializer = self.get_serializer(client)
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
+        if not user_id:
+            return Response(
+                {"error": "user_id parameter is required."},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        try:
+            # Fetch the User and the linked Client
+            user = User.objects.get(id=user_id)
+            client = Client.objects.get(user=user)
+        except User.DoesNotExist:
+            return Response({"error": f"No user found with id {user_id}."}, status=status.HTTP_404_NOT_FOUND)
+        except Client.DoesNotExist:
+            return Response({"error": f"No client linked to user id {user_id}."}, status=status.HTTP_404_NOT_FOUND)
+
+        # Retrieve all books linked to the client
+        books = Book.objects.filter(client=client)
+
+        # Serialize books and client
+        books_serializer = BookSerializer(books, many=True)
+        client_data = self.get_serializer(client).data
+        client_data['books'] = books_serializer.data
+
+        return Response(client_data, status=status.HTTP_200_OK)
+
+
     @action(detail=False, methods=['get'])
     def create_client(self, request):
         """

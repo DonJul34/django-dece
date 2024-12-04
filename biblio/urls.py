@@ -51,7 +51,6 @@ router.register(r'opportunities', OpportunityViewSet)
 router.register(r'author', AuthorViewSet)
 router.register(r'genre', GenreViewSet)
 
-
 # URL PATTERNS #
 
 urlpatterns = [
@@ -61,5 +60,4 @@ urlpatterns = [
     path('api/', include(router.urls)),  # Incluez les routes de l'API
     path('api/swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('api/redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
-
 ]
