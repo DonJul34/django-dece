@@ -4,15 +4,14 @@
 <html>
 <head>
     <title>App Livres</title>
-    <header><nav><ul><li><a href="{% url 'books:list' %}"> Books </a> </li><li><a href="{% url 'videogames:list' %}">Video Game </a> </li></nav>
-        <nav><ul><li><a href="{% url 'books:list' %}"> Books </a> </li><li><a href="{% url 'videogames:list' %}">Video Game </a> </li></nav>
+    <header>
     </header>
 </head>
 <body>
     <header>
     <p>LANGUAGE_CODE: {{ request.LANGUAGE_CODE }}</p>
 
-    <form action="{% url 'set_language' %}" method="post">
+    <form action="{% url 'books:set_language' %}" method="post">
       {% csrf_token %}
       <select name="language" onchange="this.form.submit()">
           <option value="fr" {% if request.LANGUAGE_CODE == 'fr' %}selected{% endif %}>🇫🇷 Français</option>

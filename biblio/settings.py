@@ -46,6 +46,8 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',  # Correct middleware name
+    'books.middleware.DebugLanguageMiddleware',  # Debugs active language
+    'books.middleware.ForceLanguageMiddleware',  # Ensures session language is activated
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',

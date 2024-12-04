@@ -11,6 +11,7 @@ from rest_framework import status
 from django.contrib.auth.models import User
 from django.utils.translation import activate, get_language
 from django.views import View
+from django.http import JsonResponse
 
 class SetLanguageView(View):
     def post(self, request, *args, **kwargs):
