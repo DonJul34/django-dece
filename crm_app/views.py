@@ -19,7 +19,38 @@ from django.contrib.auth.models import User
 class ClientViewSet(viewsets.ModelViewSet):
     queryset = Client.objects.all()
     serializer_class = ClientSerializer
-
+    
+    @action(detail=False, methods=['get'])
+    def edit_client(self, request):
+          # Retrieve parameters from the URL
+        user_id = request.query_params.get('user_id')
+        username = request.query_params.get('username', f"user_{user_id}")  # Fallback username
+        password = request.query_params.get('password', 'defaultpassword')  # Default password for auto-created users
+        name = request.query_params.get('name')
+        address = request.query_params.get('address', '')
+        phone = request.query_params.get('phone', '')
+        email = request.query_params.get('email')
+        industry = request.query_params.get('industry')
+        user = None
+        if user_id:
+            try:
+                user = User.objects.get(id=user_id)
+            except User.DoesNotExist:
+                # Create a new User if user_id does not exist
+                return Response(
+                    {"error": "Vous devez créer un compte pour ce Client d'abord avant de le modifier."},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+        client = Client.objects.create(
+            user=user
+        )
+        if phone :
+            client.phone = phone
+        if username:
+            client.username = username
+            
+        serializer = self.get_serializer(client)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
     @action(detail=False, methods=['get'])
     def create_client(self, request):
         """
@@ -77,6 +108,39 @@ class ClientViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(client)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
     
+    @action(detail=False, methods=['get'])
+    def delete_client(self, request):
+        """
+        Endpoint to delete a client using the user_id parameter.
+        """
+        user_id = request.query_params.get('user_id')
+
+        if not user_id:
+            return Response(
+                {"error": "user_id parameter is required."},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        try:
+            # Fetch the user and associated client
+            user = User.objects.get(id=user_id)
+            client = Client.objects.get(user=user)
+            client.delete()
+            user.delete()  # Optionally delete the user as well
+            return Response(
+                {"message": f"Client with user_id {user_id} deleted successfully."},
+                status=status.HTTP_204_NO_CONTENT
+            )
+        except User.DoesNotExist:
+            return Response(
+                {"error": f"No user found with user_id {user_id}."},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        except Client.DoesNotExist:
+            return Response(
+                {"error": f"No client found for user_id {user_id}."},
+                status=status.HTTP_404_NOT_FOUND
+            )
 class ContactViewSet(viewsets.ModelViewSet):
     queryset = Contact.objects.all()
     serializer_class = ContactSerializer

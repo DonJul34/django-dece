@@ -2,6 +2,21 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from .models import Book
 from .forms import BookForm, AuthorForm, GenreForm
+from rest_framework import viewsets
+from .models import Author, Genre
+from .serializers import AuthorSerializer, GenreSerializer
+from rest_framework.decorators import action
+from rest_framework.response import Response
+from rest_framework import status
+from django.contrib.auth.models import User
+
+class AuthorViewSet(viewsets.ModelViewSet):
+    queryset = Author.objects.all()
+    serializer_class = AuthorSerializer
+
+class GenreViewSet(viewsets.ModelViewSet):
+    queryset = Genre.objects.all()
+    serializer_class = GenreSerializer
 
 @login_required
 def add_author(request):

@@ -68,7 +68,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'books',
-    'crm_app'
+    'crm_app',
+    'drf_yasg',
+
 ]
 
 MIDDLEWARE = [
