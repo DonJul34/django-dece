@@ -1,0 +1,130 @@
+2024-12-04 14:45:50,406 INFO:books_tests:Setting up AuthorViewTests
+2024-12-04 14:45:50,651 INFO:books_tests:Testing GET request for add_author view
+2024-12-04 14:45:50,686 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:45:50,687 INFO:books_tests:Setting up AuthorViewTests
+2024-12-04 14:45:50,954 INFO:books_tests:Testing POST request for add_author view with invalid data
+2024-12-04 14:45:50,962 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:45:50,963 INFO:books_tests:Setting up AuthorViewTests
+2024-12-04 14:45:51,264 INFO:books_tests:Testing POST request for add_author view with valid data
+2024-12-04 14:45:51,271 DEBUG:books_tests:Response status code: 302
+2024-12-04 14:45:51,273 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:45:51,530 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:45:51,762 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:45:51,979 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:45:52,195 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:45:52,414 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:45:52,641 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:45:52,864 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:45:53,089 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:45:53,333 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:45:53,574 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:45:53,795 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:45:54,009 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:45:54,243 INFO:books_tests:Setting up GenreViewTests
+2024-12-04 14:45:54,457 INFO:books_tests:Testing GET request for add_genre view
+2024-12-04 14:45:54,465 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:45:54,466 INFO:books_tests:Setting up GenreViewTests
+2024-12-04 14:45:54,667 INFO:books_tests:Testing POST request for add_genre view with invalid data
+2024-12-04 14:45:54,671 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:45:54,672 INFO:books_tests:Setting up GenreViewTests
+2024-12-04 14:45:54,889 INFO:books_tests:Testing POST request for add_genre view with valid data
+2024-12-04 14:45:54,895 DEBUG:books_tests:Response status code: 302
+2024-12-04 14:45:54,897 INFO:books_tests:Setting up SetLanguageViewTests
+2024-12-04 14:45:55,108 INFO:books_tests:Testing SetLanguageView with invalid language
+2024-12-04 14:45:55,111 DEBUG:books_tests:Response status code: 400
+2024-12-04 14:45:55,112 INFO:books_tests:Setting up SetLanguageViewTests
+2024-12-04 14:45:55,333 INFO:books_tests:Testing SetLanguageView with valid language
+2024-12-04 14:45:55,346 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:48:42,064 INFO:books_tests:Setting up AuthorViewTests
+2024-12-04 14:48:42,359 INFO:books_tests:Testing GET request for add_author view
+2024-12-04 14:48:42,396 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:48:42,397 INFO:books_tests:Setting up AuthorViewTests
+2024-12-04 14:48:42,678 INFO:books_tests:Testing POST request for add_author view with invalid data
+2024-12-04 14:48:42,687 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:48:42,688 INFO:books_tests:Setting up AuthorViewTests
+2024-12-04 14:48:42,985 INFO:books_tests:Testing POST request for add_author view with valid data
+2024-12-04 14:48:42,993 DEBUG:books_tests:Response status code: 302
+2024-12-04 14:48:42,997 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:48:43,302 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:48:43,581 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:48:43,822 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:48:44,069 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:48:44,290 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:48:44,529 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:48:44,750 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:48:44,975 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:48:45,186 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:48:45,418 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:48:45,631 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:48:45,853 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:48:46,072 INFO:books_tests:Setting up GenreViewTests
+2024-12-04 14:48:46,294 INFO:books_tests:Testing GET request for add_genre view
+2024-12-04 14:48:46,300 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:48:46,301 INFO:books_tests:Setting up GenreViewTests
+2024-12-04 14:48:46,532 INFO:books_tests:Testing POST request for add_genre view with invalid data
+2024-12-04 14:48:46,538 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:48:46,540 INFO:books_tests:Setting up GenreViewTests
+2024-12-04 14:48:46,765 INFO:books_tests:Testing POST request for add_genre view with valid data
+2024-12-04 14:48:46,770 DEBUG:books_tests:Response status code: 302
+2024-12-04 14:51:58,192 INFO:books_tests:Setting up AuthorViewTests
+2024-12-04 14:52:00,526 INFO:books_tests:Testing GET request for add_author view
+2024-12-04 14:52:00,898 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:52:00,904 INFO:books_tests:Setting up AuthorViewTests
+2024-12-04 14:52:03,292 INFO:books_tests:Testing POST request for add_author view with invalid data
+2024-12-04 14:52:03,347 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:52:03,355 INFO:books_tests:Setting up AuthorViewTests
+2024-12-04 14:52:05,856 INFO:books_tests:Testing POST request for add_author view with valid data
+2024-12-04 14:52:05,931 DEBUG:books_tests:Response status code: 302
+2024-12-04 14:52:05,944 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:52:08,028 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:52:09,994 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:52:11,718 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:52:14,007 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:52:16,005 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:52:17,799 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:52:19,610 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:52:21,638 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:52:24,562 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:52:26,820 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:52:28,730 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:52:30,977 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:52:33,747 INFO:books_tests:Setting up GenreViewTests
+2024-12-04 14:52:36,305 INFO:books_tests:Testing GET request for add_genre view
+2024-12-04 14:52:36,336 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:52:36,340 INFO:books_tests:Setting up GenreViewTests
+2024-12-04 14:52:38,409 INFO:books_tests:Testing POST request for add_genre view with invalid data
+2024-12-04 14:52:38,456 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:52:38,462 INFO:books_tests:Setting up GenreViewTests
+2024-12-04 14:52:40,459 INFO:books_tests:Testing POST request for add_genre view with valid data
+2024-12-04 14:52:40,520 DEBUG:books_tests:Response status code: 302
+2024-12-04 14:53:34,752 INFO:books_tests:Setting up AuthorViewTests
+2024-12-04 14:53:34,956 INFO:books_tests:Testing GET request for add_author view
+2024-12-04 14:53:34,999 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:53:35,000 INFO:books_tests:Setting up AuthorViewTests
+2024-12-04 14:53:35,206 INFO:books_tests:Testing POST request for add_author view with invalid data
+2024-12-04 14:53:35,214 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:53:35,215 INFO:books_tests:Setting up AuthorViewTests
+2024-12-04 14:53:35,412 INFO:books_tests:Testing POST request for add_author view with valid data
+2024-12-04 14:53:35,418 DEBUG:books_tests:Response status code: 302
+2024-12-04 14:53:35,421 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:53:35,639 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:53:35,853 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:53:36,094 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:53:36,297 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:53:36,499 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:53:36,692 INFO:books_tests:Setting up BookManagerTests
+2024-12-04 14:53:36,899 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:53:37,101 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:53:37,296 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:53:37,506 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:53:37,730 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:53:37,951 INFO:books_tests:Setting up BookViewTests
+2024-12-04 14:53:38,160 INFO:books_tests:Setting up GenreViewTests
+2024-12-04 14:53:38,360 INFO:books_tests:Testing GET request for add_genre view
+2024-12-04 14:53:38,368 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:53:38,370 INFO:books_tests:Setting up GenreViewTests
+2024-12-04 14:53:38,564 INFO:books_tests:Testing POST request for add_genre view with invalid data
+2024-12-04 14:53:38,569 DEBUG:books_tests:Response status code: 200
+2024-12-04 14:53:38,570 INFO:books_tests:Setting up GenreViewTests
+2024-12-04 14:53:38,769 INFO:books_tests:Testing POST request for add_genre view with valid data
+2024-12-04 14:53:38,776 DEBUG:books_tests:Response status code: 302

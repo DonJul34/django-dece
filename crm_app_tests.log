@@ -1,0 +1,224 @@
+2024-12-04 14:45:55,347 INFO:crm_app_tests:Setting up AdminStatisticsViewTests
+2024-12-04 14:45:55,588 INFO:crm_app_tests:Setting up AdminStatisticsViewTests
+2024-12-04 14:45:55,805 INFO:crm_app_tests:Setting up ClientModelTests
+2024-12-04 14:45:55,906 INFO:crm_app_tests:Testing Client creation
+2024-12-04 14:45:55,907 INFO:crm_app_tests:Setting up ClientModelTests
+2024-12-04 14:45:56,005 INFO:crm_app_tests:Testing unique email constraint for Client
+2024-12-04 14:45:56,007 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:45:56,120 INFO:crm_app_tests:Testing custom 'books' action in ClientViewSet
+2024-12-04 14:45:56,129 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:45:56,246 INFO:crm_app_tests:Testing custom 'create_client' action in ClientViewSet via API
+2024-12-04 14:45:56,248 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:45:56,364 INFO:crm_app_tests:Testing POST request for ClientViewSet create via API
+2024-12-04 14:45:56,373 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:45:56,471 INFO:crm_app_tests:Testing custom 'delete_client' action in ClientViewSet via API
+2024-12-04 14:45:56,473 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:45:56,580 INFO:crm_app_tests:Testing DELETE request for ClientViewSet via API
+2024-12-04 14:45:56,587 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:45:56,688 INFO:crm_app_tests:Testing GET request for ClientViewSet list
+2024-12-04 14:45:56,693 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:45:56,814 INFO:crm_app_tests:Testing GET request for ClientViewSet retrieve
+2024-12-04 14:45:56,818 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:45:56,934 INFO:crm_app_tests:Testing PUT request for ClientViewSet update via API
+2024-12-04 14:45:56,940 INFO:crm_app_tests:Setting up ContactModelTests
+2024-12-04 14:45:57,050 INFO:crm_app_tests:Testing Contact creation
+2024-12-04 14:45:57,053 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:45:57,161 INFO:crm_app_tests:Testing POST request for ContactViewSet create via API
+2024-12-04 14:45:57,167 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:45:57,276 INFO:crm_app_tests:Testing DELETE request for ContactViewSet via API
+2024-12-04 14:45:57,281 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:45:57,397 INFO:crm_app_tests:Testing GET request for ContactViewSet list
+2024-12-04 14:45:57,401 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:45:57,507 INFO:crm_app_tests:Testing GET request for ContactViewSet retrieve
+2024-12-04 14:45:57,511 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:45:57,617 INFO:crm_app_tests:Testing PUT request for ContactViewSet update via API
+2024-12-04 14:45:57,622 INFO:crm_app_tests:Setting up InteractionModelTests
+2024-12-04 14:45:57,735 INFO:crm_app_tests:Testing Interaction creation
+2024-12-04 14:45:57,737 INFO:crm_app_tests:Setting up LoginViewTests
+2024-12-04 14:45:57,841 INFO:crm_app_tests:Testing GET request for login view
+2024-12-04 14:45:57,846 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:45:57,847 INFO:crm_app_tests:Setting up LoginViewTests
+2024-12-04 14:45:57,969 INFO:crm_app_tests:Testing POST request for login view with invalid credentials
+2024-12-04 14:45:58,085 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:45:58,086 INFO:crm_app_tests:Setting up LoginViewTests
+2024-12-04 14:45:58,200 INFO:crm_app_tests:Testing POST request for login view with valid credentials
+2024-12-04 14:45:58,330 DEBUG:crm_app_tests:Response status code: 302
+2024-12-04 14:45:58,331 INFO:crm_app_tests:Setting up OpportunityModelTests
+2024-12-04 14:45:58,441 INFO:crm_app_tests:Testing Opportunity creation
+2024-12-04 14:45:58,443 INFO:crm_app_tests:Setting up SignupViewTests
+2024-12-04 14:45:58,443 INFO:crm_app_tests:Testing GET request for signup view
+2024-12-04 14:45:58,476 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:45:58,478 INFO:crm_app_tests:Setting up SignupViewTests
+2024-12-04 14:45:58,478 INFO:crm_app_tests:Testing POST request for signup view with invalid data
+2024-12-04 14:45:58,486 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:45:58,488 INFO:crm_app_tests:Setting up SignupViewTests
+2024-12-04 14:45:58,488 INFO:crm_app_tests:Testing POST request for signup view with valid data
+2024-12-04 14:45:58,595 DEBUG:crm_app_tests:Response status code: 302
+2024-12-04 14:48:46,771 INFO:crm_app_tests:Setting up AdminStatisticsViewTests
+2024-12-04 14:48:46,981 INFO:crm_app_tests:Setting up AdminStatisticsViewTests
+2024-12-04 14:48:47,197 INFO:crm_app_tests:Setting up ClientModelTests
+2024-12-04 14:48:47,406 INFO:crm_app_tests:Testing Client creation
+2024-12-04 14:48:47,409 INFO:crm_app_tests:Setting up ClientModelTests
+2024-12-04 14:48:47,532 INFO:crm_app_tests:Testing unique email constraint for Client
+2024-12-04 14:48:47,533 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:48:47,642 INFO:crm_app_tests:Testing custom 'books' action in ClientViewSet
+2024-12-04 14:48:47,644 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:48:47,745 INFO:crm_app_tests:Testing custom 'create_client' action in ClientViewSet via API
+2024-12-04 14:48:47,746 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:48:47,856 INFO:crm_app_tests:Testing POST request for ClientViewSet create via API
+2024-12-04 14:48:47,863 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:48:47,967 INFO:crm_app_tests:Testing custom 'delete_client' action in ClientViewSet via API
+2024-12-04 14:48:47,968 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:48:48,083 INFO:crm_app_tests:Testing DELETE request for ClientViewSet via API
+2024-12-04 14:48:48,089 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:48:48,189 INFO:crm_app_tests:Testing GET request for ClientViewSet list
+2024-12-04 14:48:48,194 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:48:48,294 INFO:crm_app_tests:Testing GET request for ClientViewSet retrieve
+2024-12-04 14:48:48,298 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:48:48,414 INFO:crm_app_tests:Testing PUT request for ClientViewSet update via API
+2024-12-04 14:48:48,421 INFO:crm_app_tests:Setting up ContactModelTests
+2024-12-04 14:48:48,531 INFO:crm_app_tests:Testing Contact creation
+2024-12-04 14:48:48,533 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:48:48,661 INFO:crm_app_tests:Testing POST request for ContactViewSet create via API
+2024-12-04 14:48:48,666 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:48:48,789 INFO:crm_app_tests:Testing DELETE request for ContactViewSet via API
+2024-12-04 14:48:48,795 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:48:48,900 INFO:crm_app_tests:Testing GET request for ContactViewSet list
+2024-12-04 14:48:48,905 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:48:49,009 INFO:crm_app_tests:Testing GET request for ContactViewSet retrieve
+2024-12-04 14:48:49,013 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:48:49,121 INFO:crm_app_tests:Testing PUT request for ContactViewSet update via API
+2024-12-04 14:48:49,130 INFO:crm_app_tests:Setting up InteractionModelTests
+2024-12-04 14:48:49,236 INFO:crm_app_tests:Testing Interaction creation
+2024-12-04 14:48:49,237 INFO:crm_app_tests:Setting up LoginViewTests
+2024-12-04 14:48:49,351 INFO:crm_app_tests:Testing GET request for login view
+2024-12-04 14:48:49,354 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:48:49,355 INFO:crm_app_tests:Setting up LoginViewTests
+2024-12-04 14:48:49,466 INFO:crm_app_tests:Testing POST request for login view with invalid credentials
+2024-12-04 14:48:49,570 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:48:49,572 INFO:crm_app_tests:Setting up LoginViewTests
+2024-12-04 14:48:49,688 INFO:crm_app_tests:Testing POST request for login view with valid credentials
+2024-12-04 14:48:49,796 DEBUG:crm_app_tests:Response status code: 302
+2024-12-04 14:48:49,797 INFO:crm_app_tests:Setting up OpportunityModelTests
+2024-12-04 14:48:49,906 INFO:crm_app_tests:Testing Opportunity creation
+2024-12-04 14:48:49,908 INFO:crm_app_tests:Setting up SignupViewTests
+2024-12-04 14:48:49,909 INFO:crm_app_tests:Testing GET request for signup view
+2024-12-04 14:48:49,948 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:48:49,950 INFO:crm_app_tests:Setting up SignupViewTests
+2024-12-04 14:48:49,950 INFO:crm_app_tests:Testing POST request for signup view with invalid data
+2024-12-04 14:48:49,964 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:48:49,966 INFO:crm_app_tests:Setting up SignupViewTests
+2024-12-04 14:48:49,966 INFO:crm_app_tests:Testing POST request for signup view with valid data
+2024-12-04 14:48:50,079 DEBUG:crm_app_tests:Response status code: 302
+2024-12-04 14:52:40,538 INFO:crm_app_tests:Setting up AdminStatisticsViewTests
+2024-12-04 14:52:42,231 INFO:crm_app_tests:Setting up AdminStatisticsViewTests
+2024-12-04 14:52:43,895 INFO:crm_app_tests:Setting up ClientModelTests
+2024-12-04 14:52:44,666 INFO:crm_app_tests:Testing Client creation
+2024-12-04 14:52:44,671 INFO:crm_app_tests:Setting up ClientModelTests
+2024-12-04 14:52:45,438 INFO:crm_app_tests:Testing unique email constraint for Client
+2024-12-04 14:52:45,448 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:52:46,189 INFO:crm_app_tests:Testing custom 'books' action in ClientViewSet
+2024-12-04 14:52:46,197 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:52:47,081 INFO:crm_app_tests:Testing custom 'create_client' action in ClientViewSet via API
+2024-12-04 14:52:47,089 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:52:48,479 INFO:crm_app_tests:Testing POST request for ClientViewSet create via API
+2024-12-04 14:52:48,566 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:52:49,426 INFO:crm_app_tests:Testing custom 'delete_client' action in ClientViewSet via API
+2024-12-04 14:52:49,437 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:52:50,200 INFO:crm_app_tests:Testing DELETE request for ClientViewSet via API
+2024-12-04 14:52:50,282 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:52:51,290 INFO:crm_app_tests:Testing GET request for ClientViewSet list
+2024-12-04 14:52:51,362 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:52:52,171 INFO:crm_app_tests:Testing GET request for ClientViewSet retrieve
+2024-12-04 14:52:52,220 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:52:53,062 INFO:crm_app_tests:Testing PUT request for ClientViewSet update via API
+2024-12-04 14:52:53,161 INFO:crm_app_tests:Setting up ContactModelTests
+2024-12-04 14:52:53,998 INFO:crm_app_tests:Testing Contact creation
+2024-12-04 14:52:54,007 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:52:54,850 INFO:crm_app_tests:Testing POST request for ContactViewSet create via API
+2024-12-04 14:52:54,884 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:52:55,620 INFO:crm_app_tests:Testing DELETE request for ContactViewSet via API
+2024-12-04 14:52:55,646 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:52:56,494 INFO:crm_app_tests:Testing GET request for ContactViewSet list
+2024-12-04 14:52:56,507 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:52:57,529 INFO:crm_app_tests:Testing GET request for ContactViewSet retrieve
+2024-12-04 14:52:57,549 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:52:58,247 INFO:crm_app_tests:Testing PUT request for ContactViewSet update via API
+2024-12-04 14:52:58,268 INFO:crm_app_tests:Setting up InteractionModelTests
+2024-12-04 14:52:58,852 INFO:crm_app_tests:Testing Interaction creation
+2024-12-04 14:52:58,858 INFO:crm_app_tests:Setting up LoginViewTests
+2024-12-04 14:52:59,510 INFO:crm_app_tests:Testing GET request for login view
+2024-12-04 14:52:59,521 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:52:59,523 INFO:crm_app_tests:Setting up LoginViewTests
+2024-12-04 14:52:59,934 INFO:crm_app_tests:Testing POST request for login view with invalid credentials
+2024-12-04 14:53:00,505 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:53:00,510 INFO:crm_app_tests:Setting up LoginViewTests
+2024-12-04 14:53:01,051 INFO:crm_app_tests:Testing POST request for login view with valid credentials
+2024-12-04 14:53:01,736 DEBUG:crm_app_tests:Response status code: 302
+2024-12-04 14:53:01,742 INFO:crm_app_tests:Setting up OpportunityModelTests
+2024-12-04 14:53:02,434 INFO:crm_app_tests:Testing Opportunity creation
+2024-12-04 14:53:02,439 INFO:crm_app_tests:Setting up SignupViewTests
+2024-12-04 14:53:02,441 INFO:crm_app_tests:Testing GET request for signup view
+2024-12-04 14:53:02,542 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:53:02,545 INFO:crm_app_tests:Setting up SignupViewTests
+2024-12-04 14:53:02,545 INFO:crm_app_tests:Testing POST request for signup view with invalid data
+2024-12-04 14:53:02,588 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:53:02,592 INFO:crm_app_tests:Setting up SignupViewTests
+2024-12-04 14:53:02,594 INFO:crm_app_tests:Testing POST request for signup view with valid data
+2024-12-04 14:53:03,346 DEBUG:crm_app_tests:Response status code: 302
+2024-12-04 14:53:38,776 INFO:crm_app_tests:Setting up AdminStatisticsViewTests
+2024-12-04 14:53:38,976 INFO:crm_app_tests:Setting up AdminStatisticsViewTests
+2024-12-04 14:53:39,177 INFO:crm_app_tests:Setting up ClientModelTests
+2024-12-04 14:53:39,270 INFO:crm_app_tests:Testing Client creation
+2024-12-04 14:53:39,270 INFO:crm_app_tests:Setting up ClientModelTests
+2024-12-04 14:53:39,367 INFO:crm_app_tests:Testing unique email constraint for Client
+2024-12-04 14:53:39,368 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:53:39,477 INFO:crm_app_tests:Testing custom 'books' action in ClientViewSet
+2024-12-04 14:53:39,480 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:53:39,569 INFO:crm_app_tests:Testing custom 'create_client' action in ClientViewSet via API
+2024-12-04 14:53:39,571 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:53:39,666 INFO:crm_app_tests:Testing POST request for ClientViewSet create via API
+2024-12-04 14:53:39,678 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:53:39,770 INFO:crm_app_tests:Testing custom 'delete_client' action in ClientViewSet via API
+2024-12-04 14:53:39,772 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:53:39,866 INFO:crm_app_tests:Testing DELETE request for ClientViewSet via API
+2024-12-04 14:53:39,872 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:53:39,969 INFO:crm_app_tests:Testing GET request for ClientViewSet list
+2024-12-04 14:53:39,982 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:53:40,096 INFO:crm_app_tests:Testing GET request for ClientViewSet retrieve
+2024-12-04 14:53:40,101 INFO:crm_app_tests:Setting up ClientViewSetTests
+2024-12-04 14:53:40,193 INFO:crm_app_tests:Testing PUT request for ClientViewSet update via API
+2024-12-04 14:53:40,202 INFO:crm_app_tests:Setting up ContactModelTests
+2024-12-04 14:53:40,304 INFO:crm_app_tests:Testing Contact creation
+2024-12-04 14:53:40,306 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:53:40,401 INFO:crm_app_tests:Testing POST request for ContactViewSet create via API
+2024-12-04 14:53:40,407 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:53:40,506 INFO:crm_app_tests:Testing DELETE request for ContactViewSet via API
+2024-12-04 14:53:40,511 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:53:40,602 INFO:crm_app_tests:Testing GET request for ContactViewSet list
+2024-12-04 14:53:40,609 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:53:40,707 INFO:crm_app_tests:Testing GET request for ContactViewSet retrieve
+2024-12-04 14:53:40,713 INFO:crm_app_tests:Setting up ContactViewSetTests
+2024-12-04 14:53:40,814 INFO:crm_app_tests:Testing PUT request for ContactViewSet update via API
+2024-12-04 14:53:40,820 INFO:crm_app_tests:Setting up InteractionModelTests
+2024-12-04 14:53:40,914 INFO:crm_app_tests:Testing Interaction creation
+2024-12-04 14:53:40,915 INFO:crm_app_tests:Setting up LoginViewTests
+2024-12-04 14:53:41,016 INFO:crm_app_tests:Testing GET request for login view
+2024-12-04 14:53:41,023 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:53:41,024 INFO:crm_app_tests:Setting up LoginViewTests
+2024-12-04 14:53:41,120 INFO:crm_app_tests:Testing POST request for login view with invalid credentials
+2024-12-04 14:53:41,218 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:53:41,219 INFO:crm_app_tests:Setting up LoginViewTests
+2024-12-04 14:53:41,320 INFO:crm_app_tests:Testing POST request for login view with valid credentials
+2024-12-04 14:53:41,420 DEBUG:crm_app_tests:Response status code: 302
+2024-12-04 14:53:41,421 INFO:crm_app_tests:Setting up OpportunityModelTests
+2024-12-04 14:53:41,508 INFO:crm_app_tests:Testing Opportunity creation
+2024-12-04 14:53:41,510 INFO:crm_app_tests:Setting up SignupViewTests
+2024-12-04 14:53:41,510 INFO:crm_app_tests:Testing GET request for signup view
+2024-12-04 14:53:41,532 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:53:41,533 INFO:crm_app_tests:Setting up SignupViewTests
+2024-12-04 14:53:41,534 INFO:crm_app_tests:Testing POST request for signup view with invalid data
+2024-12-04 14:53:41,546 DEBUG:crm_app_tests:Response status code: 200
+2024-12-04 14:53:41,548 INFO:crm_app_tests:Setting up SignupViewTests
+2024-12-04 14:53:41,549 INFO:crm_app_tests:Testing POST request for signup view with valid data
+2024-12-04 14:53:41,659 DEBUG:crm_app_tests:Response status code: 302
