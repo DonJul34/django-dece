@@ -2,6 +2,7 @@
 from django.db import models
 from crm_app.models import Client  # Assuming the Client model is in crm_app
 from django.conf import settings  # For referencing the User model
+from client_library.models import Lecteur
 
 class BookManager(models.Manager):
     def filter_books(self, user, title=None, author=None, year=None, genre=None, sort_by=None):
@@ -46,6 +47,15 @@ class Book(models.Model):
     genres = models.ManyToManyField('Genre', related_name="books")  # Many-to-Many
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="books")
     client = models.ForeignKey(Client, on_delete=models.CASCADE, related_name="books")
+    lecteur = models.ForeignKey(
+        'client_library.Lecteur',  # String reference to avoid circular import
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='books'
+    )
+
+    
     # Custom manager
     objects = BookManager()
 

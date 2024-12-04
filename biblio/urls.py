@@ -56,6 +56,7 @@ router.register(r'genre', GenreViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('books/', include('books.urls')),  # Books app
+    path('books/lecteurs/', include('client_library.urls')),  # Books app
     path('', include('crm_app.urls')),  # CRM app
     path('api/', include(router.urls)),  # Incluez les routes de l'API
     path('api/swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),

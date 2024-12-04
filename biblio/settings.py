@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'books',
     'crm_app',
     'drf_yasg',
+    'client_library'
 ]
 
 MIDDLEWARE = [

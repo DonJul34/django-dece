@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}  <!-- Correct reference to base.html -->
+{% load i18n %}
+
+{% block content %}
+<h2>Your Lecteurs</h2>
+<ul>
+    {% for lecteur in lecteurs %}
+        <li>{{ lecteur.name }}</li>
+    {% empty %}
+        <li>No lecteurs available.</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

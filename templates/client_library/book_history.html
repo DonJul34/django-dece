@@ -1,0 +1,17 @@
+
+{% extends 'base.html' %}  <!-- Correct reference to base.html -->
+{% load i18n %}
+
+{% block content %}
+<h2>Borrowing History for {{ book.title }}</h2>
+<ul>
+    {% for entry in history %}
+        <li>
+            Borrowed by {{ entry.lecteur.name }} on {{ entry.date_borrowed }}{% if entry.date_returned %}, returned on {{ entry.date_returned }}{% endif %}
+        </li>
+    {% empty %}
+        <li>No borrowing history.</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
