@@ -10,6 +10,7 @@ def book_history(request, book_id):
     book = get_object_or_404(Book, id=book_id, user=request.user)
     history = book.history.all().order_by('-date_borrowed')
     return render(request, 'client_library/book_history.html', {'book': book, 'history': history})
+    
 @login_required
 def change_lecteur(request, book_id):
     book = get_object_or_404(Book, id=book_id, user=request.user)
